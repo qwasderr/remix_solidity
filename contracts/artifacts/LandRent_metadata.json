@@ -1,0 +1,199 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "LP",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "LPid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "LPName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "LPAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rpd",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "last_owned",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "owned_till",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isFree",
+						"type": "bool"
+					},
+					{
+						"internalType": "address payable",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "holder",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "lpname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "lpaddress",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lprent",
+						"type": "uint256"
+					}
+				],
+				"name": "addLP",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "land_num",
+						"type": "uint256"
+					}
+				],
+				"name": "check_rent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "land_pieces",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "future_holder",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "land_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "holding_days",
+						"type": "uint256"
+					}
+				],
+				"name": "rentLP",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/rent.sol": "LandRent"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/rent.sol": {
+			"keccak256": "0xb93d66d8f44c84cbc9a9d4935d017873cfc3974205bbd1f8cc294d591a13d000",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://6cc9b911a23b51d5d93733f70a69c03817d07457b895c8a1fe368ccaed879ff8",
+				"dweb:/ipfs/QmcYaQ7WnDQxD4e74PZMTmcvwrg7JtPwp3oTayAQDHX9aA"
+			]
+		}
+	},
+	"version": 1
+}
