@@ -62,7 +62,7 @@ function rentLP(address payable future_holder, uint land_num, uint holding_days)
     //address payable _Tenant = Room_by_No[_index].currentTenant;
     //uint _securitydeposit = Room_by_No[_index].securityDeposit;
     LP[land_num].holder=future_holder;
-    future_holder.transfer(LP[land_num].rpd*holding_days);
+    LP[land_num].owner.transfer(LP[land_num].rpd*holding_days);
 }
 function check_rent(uint land_num) public Exists(land_num) isntFree(land_num){
     if (block.timestamp > LP[land_num].owned_till){
@@ -71,4 +71,5 @@ function check_rent(uint land_num) public Exists(land_num) isntFree(land_num){
     }
 }
     receive() external payable {}
+    fallback() external payable {}
 }

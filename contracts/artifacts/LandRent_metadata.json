@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.21+commit.d9974bed"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -9,6 +9,10 @@
 				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [
@@ -174,7 +178,7 @@
 		"compilationTarget": {
 			"contracts/rent.sol": "LandRent"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -187,11 +191,11 @@
 	},
 	"sources": {
 		"contracts/rent.sol": {
-			"keccak256": "0xb93d66d8f44c84cbc9a9d4935d017873cfc3974205bbd1f8cc294d591a13d000",
+			"keccak256": "0xc36bff504df936b7e40ae64e0211f639f8c9ab6831f9cd82b443d34d40b719ba",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://6cc9b911a23b51d5d93733f70a69c03817d07457b895c8a1fe368ccaed879ff8",
-				"dweb:/ipfs/QmcYaQ7WnDQxD4e74PZMTmcvwrg7JtPwp3oTayAQDHX9aA"
+				"bzz-raw://6a7d80f0ae456c497c7f922e25f0a2a751e304cd283eb521f0a3d15728039d86",
+				"dweb:/ipfs/QmRWsJQwkfE3Lw3UYaWoic7ycbFqL6yPWFfDsiyEQL2rMi"
 			]
 		}
 	},
