@@ -41,6 +41,11 @@
 					},
 					{
 						"internalType": "uint256",
+						"name": "area",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
 						"name": "rpd",
 						"type": "uint256"
 					},
@@ -84,6 +89,11 @@
 						"internalType": "string",
 						"name": "lpaddress",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lparea",
+						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
@@ -191,11 +201,11 @@
 	},
 	"sources": {
 		"contracts/rent.sol": {
-			"keccak256": "0xc36bff504df936b7e40ae64e0211f639f8c9ab6831f9cd82b443d34d40b719ba",
+			"keccak256": "0x83182a1766dc6d12090cb83999c07175f954a344f397747b90dc7dcc40f91616",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://6a7d80f0ae456c497c7f922e25f0a2a751e304cd283eb521f0a3d15728039d86",
-				"dweb:/ipfs/QmRWsJQwkfE3Lw3UYaWoic7ycbFqL6yPWFfDsiyEQL2rMi"
+				"bzz-raw://bf545e2182a6bb9380a16b90c695cf8ee7c0462899a133ebf4bbfbb5c36b8fec",
+				"dweb:/ipfs/QmVSxg6GEwWkniAFhVXWCDgu56PHAtqqP2Pesyah72Q8uC"
 			]
 		}
 	},

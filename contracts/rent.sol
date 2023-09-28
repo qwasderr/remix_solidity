@@ -9,6 +9,7 @@ contract LandRent{
         uint LPid;
         string LPName;
         string LPAddress;
+        uint area;
         uint rpd;
         uint last_owned;
         uint owned_till;
@@ -44,11 +45,12 @@ contract LandRent{
         require(block.timestamp < LP[i].owned_till, "Rent period ended");
         _;
     }
-     function addLP(string memory lpname, string memory lpaddress, uint lprent) public check_access{
+     function addLP(string memory lpname, string memory lpaddress, uint lparea, uint lprent) public check_access{
         require(msg.sender != address(0));
+        require(lparea>0, "Area can't be <= 0");
         land_pieces++;
         isFree=true;
-        LP[land_pieces] = LandPiece(land_pieces,lpname,lpaddress,lprent,0,0,isFree, payable(msg.sender), payable(address(0))); 
+        LP[land_pieces] = LandPiece(land_pieces,lpname,lpaddress,lparea,lprent,0,0,isFree, payable(msg.sender), payable(address(0))); 
         
     }
     function get_balance() external view returns(uint){
